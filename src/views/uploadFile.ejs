@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.JS Basic</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <!-- <h1>Hello world from ejs</h1> -->
+
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a class="active" href="/upload">Upload Files</a>
+    </div>
+    <div class="upload-file-container">
+        <form method="post" action="/upload-profile-pic" enctype="multipart/form-data">
+            <div>
+                <label>Chon File Upload: </label>
+                <input type="file" name="profile_pic" />
+            </div>
+
+
+            <div>
+                <button class="brn-save-file" type="submit">Save file</button>
+            </div>
+
+        </form>
+        <form method="post" action="/upload-multiple-images" enctype="multipart/form-data">
+            <div>
+                <label>Chon File Upload: </label>
+                <input type="file" name="multiple_images" multiple />
+            </div>
+
+
+            <div>
+                <input type="submit" name="btn_upload_multiple_images" value="Upload" />
+            </div>
+
+        </form>
+    </div>
+    <img src="/image/gai.jpg" />
+    <br>
+
+</body>
+
+</html>
